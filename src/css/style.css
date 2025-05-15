@@ -1,0 +1,37 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #262626;
+  color: #f1f1f1;
+}
+body h1 {
+  font-weight: 700;
+}
+body .movie-card {
+  border: none;
+  transition: transform 0.3s ease;
+  border-radius: 16px;
+  overflow: hidden;
+}
+body .movie-card:hover {
+  transform: scale(1.03);
+}
+body .movie-card .movie-img {
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+body .movie-card .card-body {
+  padding: 1rem;
+  padding-left: 1.2rem;
+}
+body .movie-card .movie-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+body .movie-card .rating {
+  font-size: 0.9rem;
+  color: #ffc107;
+}
+
+/*# sourceMappingURL=style.css.map */
