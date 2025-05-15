@@ -1,0 +1,48 @@
+$primary-color: #262626;
+$text-color: #f1f1f1;
+$highlight-color: #ffc107;
+$card-radius: 16px;
+$transition-speed: 0.3s;
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: $primary-color;
+    color: $text-color;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .movie-card {
+        border: none;
+        transition: transform $transition-speed ease;
+        border-radius: $card-radius;
+        overflow: hidden;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        .#{'movie-img'} {
+            height: 400px;
+            object-fit: cover;
+            border-top-left-radius: $card-radius;
+            border-top-right-radius: $card-radius;
+        }
+
+        .card-body {
+            padding: 1rem;
+            #{'padding-left'}: 1.2rem;
+        }
+
+        .movie-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .rating {
+            font-size: 0.9rem;
+            color: $highlight-color;
+        }
+    }
+}
